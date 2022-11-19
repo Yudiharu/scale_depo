@@ -257,6 +257,35 @@
                 return false;
             });
         });
+
+        function getTextFromFile(fileName,callBack)
+        {
+            var file = new XMLHttpRequest();
+            file.open("GET", fileName, true);
+            file.onreadystatechange = function ()
+            {
+                if(file.readyState === 4)
+                {
+                    if(file.status === 200 || file.status == 0)
+                    {
+                        var text = file.responseText;
+                        document.getElementById("beratlabel").value = text;
+                        callBack(text);
+                    }
+                }
+            }
+            file.send(null);
+        }
+
+        function refreshButton2() {
+            getTextFromFile("http://127.0.0.1:8887/text_timbang.txt",function(text){
+                let berat2 = $('#berat2');
+                var filter = text.slice(2, 9);
+                var filter2 = Number(filter);
+                document.getElementById("beratlabel").innerHTML = filter2;
+                berat2.val(filter2);
+            });
+        }
         
         function refreshButton() {
             let berat1 = $('#berat1');
