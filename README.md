@@ -2,7 +2,7 @@
 web based scale system for trucking scale integrated with vb terminal application
 
 How to use it:
-First of all, execute the timbang_terminal.exe in your desktop, it's a VB application that running in background to write into text named 'text_timbang.txt' 
+First of all, execute the <b>timbang_terminal.exe</b> in your desktop, it's a VB application that running in background to write into text named 'text_timbang.txt' 
 in your public/user folder of drive C. It automatically read from COM1 port which will be used to connect the Serial cable into the digital scale and then
 capture the weight into the 'text_timbang.txt'.
 
