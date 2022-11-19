@@ -167,7 +167,7 @@ class TransaksisController extends Controller
          $get_company = Company::where('kode_company',auth()->user()->kode_company)->first();
          $nama_company = $get_company->nama_company;
  
-         return view('admin.transaksi.create', compact('list_url','info','sizeAll','barangAll','supplierAll','customerAll','companyAll','nama_lokasi','nama_company','company','period'));
+         return view('admin.transaksi.create', compact('list_url','info','sizeAll','barangAll','supplierAll','customerAll','companyAll','nama_lokasi','nama_company','period'));
     }
 
     /**
