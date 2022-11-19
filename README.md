@@ -13,8 +13,8 @@ Next open up transaction create some transaction, store it.
 Currently the scale function only in Edit form (i'm not adding it to store form yet) so the next is press the edit button, put some weight in digital scale until the weight shown in the LED of digital scale.
 Next press the Timbang button to get the scale value.
 
-Note: I've also upload the VB app for the timbang_terminal in case you want to change the COM port from the source code.
+<i>Note: I've also upload the VB app for the timbang_terminal in case you want to change the COM port from the source code.</i>
 
-User web login:
-username: Superadministrator
-password: super123
+<u>User web login</u>:<br>
+<b>username</b>: Superadministrator<br>
+<b>password</b>: super123
